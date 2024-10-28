@@ -1,0 +1,27 @@
+/* Container for the navbar */
+.navbar-container {
+    display: flex;
+    justify-content: left; /* Centers the items horizontally */
+    align-items: center; /* Aligns items vertically */
+    padding: 10px; /* Adds padding around the navbar */
+}
+
+/* Styles for the list items */
+.navbar-container ul {
+    list-style: none; /* Removes bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Sets list items inline */
+}
+
+/* Styles for each list item */
+.navbar-container ul li {
+    margin-right: 20px; /* Adds space between items */
+    font-weight: bold; /* Makes text bold */
+}
+
+/* Optional link styling */
+.navbar-container ul li a {
+    color: black;
+    text-decoration: none; /* Removes underline from links */
+}
