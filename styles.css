@@ -1,13 +1,14 @@
 /* Container for the navbar */
 .navbar-container {
     display: flex;
-    justify-content: left; /* Centers the items horizontally */
+    justify-content: center; /* Centers the items horizontally */
     align-items: center; /* Aligns items vertically */
     padding: 10px; /* Adds padding around the navbar */
+    background-color: red;
 }
 
 /* Styles for the list items */
-.navbar-container ul {
+.navbar-segment ul {
     list-style: none; /* Removes bullet points */
     margin: 0;
     padding: 0;
@@ -15,13 +16,29 @@
 }
 
 /* Styles for each list item */
-.navbar-container ul li {
+.navbar-segment ul li {
     margin-right: 20px; /* Adds space between items */
     font-weight: bold; /* Makes text bold */
 }
 
 /* Optional link styling */
-.navbar-container ul li a {
+.navbar-segment ul li a {
     color: black;
     text-decoration: none; /* Removes underline from links */
+}
+
+.body-container {
+    width: 100%;
+    margin: 2.5px;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 100vh;
+    background-color: gray;
+}
+
+@media (max-width: 768px) {
+    .body-container {
+        padding: 10px;
+        max-width: 100%;
+    }
 }
